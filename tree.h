@@ -5,28 +5,21 @@
 #include <cstdlib>
 using namespace std;
 
-
 struct node
 {
-    int data;		//some questions use a char * data;
-    node * previous;
-    node * next;
+  int data;		//some questions use a char * data;
+  node * left;
+  node * right;
 };
 
 class tree
 {
-    public:
-        //These functions are already written
-        tree();         //supplied
-        ~tree();        //supplied
-        void build();   //supplied
-        void display(); //supplied
-        
-
-     /* *****************YOUR TURN! ******************************** */
-     /* place your prototype here */
-     
-     private:
-         node * head;   //notice there is both a head
-         node * tail;   //and a tail, common for DLL
+public:
+  tree();         //supplied
+  //~tree();        //supplied
+  void build();   //supplied
+  void display(node*, int); //supplied
+  void add(int, node*&);
+  void find(int);
+  node* root;   
 };

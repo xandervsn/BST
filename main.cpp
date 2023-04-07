@@ -1,16 +1,20 @@
-#include "dlist.h"
+#include "tree.h"
 
 
-int main()
-{
-    dlist object;
-    object.build();
-    object.display();
+int main(){
+  tree bst;
+  int input;
+  cout << bst.root << endl;
 
-    //PLEASE PUT YOUR CODE HERE to call the function assigned
-
-
-    object.display();
+  int i = 0;
+  while(i < 5){
+    cout << "Input:" << endl;
+    cin >> input;
+    bst.add(input, bst.root);
     
-    return 0;
+    i++;
+  }
+  bst.display(bst.root, 0);
+  
+  return 0;
 }
