@@ -13,12 +13,12 @@ struct node
     node * next;
 };
 
-class dlist
+class tree
 {
     public:
         //These functions are already written
-        dlist();         //supplied
-        ~dlist();        //supplied
+        tree();         //supplied
+        ~tree();        //supplied
         void build();   //supplied
         void display(); //supplied
         
