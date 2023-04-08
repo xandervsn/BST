@@ -20,6 +20,8 @@ public:
   void build();   //supplied
   void display(node*, int); //supplied
   void add(int, node*&);
-  void find(int);
+  void find(int, node*&);
+  void del(int, node*&, node*);
+  node* getNextHighest(node*, node*);
   node* root;   
 };
